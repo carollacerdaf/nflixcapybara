@@ -1,0 +1,26 @@
+ultimato:
+    title: "Vingadores"
+    status: Disponível
+    year: 2020
+    date_release: "24/04/2020"
+    actors: [Robert, Chris, Scarlett]
+    storyline: "Pessoal lutando aí"
+    cover: ultimato.jpg
+
+spyder:
+    title: "Homem-aranha"
+    status: "Pré-venda"
+    year: 2020
+    date_release: "25/04/2020"
+    actors: ["Tom Holland", "Samuel L Jackson"]
+    storyline: "carinha lutando aí"
+    cover: spider.jpg
+
+joker:
+    title: "Coringa"
+    status: "Em breve"
+    year: 2021
+    date_release: "25/04/2021"
+    actors: ["Joaquin Phoenix"]
+    storyline: "palhaço lutando aí"
+    cover: coringa.jpg
