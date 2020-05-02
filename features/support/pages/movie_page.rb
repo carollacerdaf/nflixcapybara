@@ -2,7 +2,7 @@ class MoviePage
     include Capybara::DSL
 
 def add
-    find('.nc-simple-add').click
+    find('.movie-add').click
 end
 
 def create(movie)
@@ -10,7 +10,7 @@ def create(movie)
 
     # combobox customizado com lis
     find('input[placeholder=Status]').click
-    find('.el-select-dropdown_item', text: movie["status"]).click
+    find('.el-select-dropdown__item', text: movie["status"]).click
 
     find('input[name=year]').set movie["year"]
     find('input[name=release_date]').set movie["release_date"]
@@ -22,7 +22,7 @@ def create(movie)
         actor.send_keys :tab
     end
     
-    find('textarea[name=overview]').set movie["overview"]
+    find('textarea[name=overview]').set movie["storyline"]
     
 end
 

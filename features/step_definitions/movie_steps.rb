@@ -8,6 +8,7 @@ Given("that {string} is a new movie") do |movie_code|
   When("I do the movie register") do
     @movie_page.add
     @movie_page.create(@movie)
+    sleep 3
     
   end
   
