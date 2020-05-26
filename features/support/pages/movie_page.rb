@@ -1,29 +1,36 @@
 class MoviePage
     include Capybara::DSL
 
+def initialize
+    @movie_list_css = "table tbody tr"
+end
+
 def add
     find('.movie-add').click
 end
 
-def create(movie)
-    find('input[name=title]').set movie["title"]
+def form
+    MovieAdd.new
+end
 
-    # combobox customizado com lis
-    find('input[placeholder=Status]').click
-    find('.el-select-dropdown__item', text: movie["status"]).click
+def sweet_alert
+    SweetAlert.new
+end
 
-    find('input[name=year]').set movie["year"]
-    find('input[name=release_date]').set movie["release_date"]
+def movie_tr(title)
+    find("table tbody tr", text: title)
+end
 
-    actor = find('.input-new-tag')
+def remove(title)
+    movie_tr(title).find(".btn-trash").click
+end
 
-    movie["actors"].each do |a| 
-        actor.set a
-        actor.send_keys :tab
-    end
-    
-    find('textarea[name=overview]').set movie["storyline"]
-    
+def has_no_movie(title)
+    page.has_no_css?(@movie_list_css, text: title)
+end
+
+def has_movie(title)
+    page.has_css?(@movie_list_css, text: title)
 end
 
 end

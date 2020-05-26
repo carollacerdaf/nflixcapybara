@@ -17,3 +17,14 @@ Feature: Cadastro de Filmes
             | "ultimato" |
             | "spyder"   |
             | "joker"    |
+
+    @dup_movie
+    Scenario: Duplicated
+
+        The administrador of the catalog tries to register a movie, but the title has already been
+        registered, and the system notifies the user that the title informed already exists.
+
+        Given that "deadpool2" is a new movie
+        But it already exists in the catalog
+        When I do the movie register
+        Then I should see the warning "Oops - Este titulo já existe no Ninjaflix."

@@ -2,7 +2,7 @@ ultimato:
     title: "Vingadores"
     status: Disponível
     year: 2020
-    date_release: "24/04/2020"
+    date_release: "04/04/2020"
     actors: [Robert, Chris, Scarlett]
     storyline: "Pessoal lutando aí"
     cover: ultimato.jpg
@@ -11,7 +11,7 @@ spyder:
     title: "Homem-aranha"
     status: "Pré-venda"
     year: 2020
-    date_release: "25/04/2020"
+    date_release: "03/04/2020"
     actors: ["Tom Holland", "Samuel L Jackson"]
     storyline: "carinha lutando aí"
     cover: spider.jpg
@@ -20,7 +20,34 @@ joker:
     title: "Coringa"
     status: "Em breve"
     year: 2021
-    date_release: "25/04/2021"
+    date_release: "03/04/2021"
     actors: ["Joaquin Phoenix"]
     storyline: "palhaço lutando aí"
     cover: coringa.jpg
+
+deadpool2:
+    title: "Deadpool 2"
+    status: "Disponível"
+    year: 2020
+    date_release: "05/04/2020"
+    actors: ["Ryan Reynolds"]
+    storyline: "cara de colan lutando aí"
+    cover: dp2.jpg
+
+dbz:
+    title: "Dragon Ball Evolution"
+    status: "Disponível"
+    year: 2009
+    date_release: "05/04/2009"
+    actors: []
+    storyline: "cara de cabelo arrepiado"
+    cover: "dbz.jpg"
+
+10_coisas:
+    title: "10 coisas que eu odeio em você"
+    status: "Disponível"
+    year: 1999
+    date_release: "05/04/1999"
+    actors: []
+    storyline: "cara de cabelo arrepiado"
+    cover: "dbz.jpg"
